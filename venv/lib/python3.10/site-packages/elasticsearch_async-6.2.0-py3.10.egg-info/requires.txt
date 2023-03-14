@@ -1,0 +1,8 @@
+aiohttp
+async_timeout
+elasticsearch>=6.0.0
+
+[develop]
+pytest
+pytest-asyncio
+pytest-cov

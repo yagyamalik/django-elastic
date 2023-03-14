@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+{% block content %}
+  <h2>Search</h2>
+  <form method="get" action="{% url 'search' %}">
+    <input type="text" name="query" value="{{ query }}" placeholder="Search...">
+    <label for="start_date">Start date:</label>
+    <input type="date" name="start_date" value="{{ start_date }}">
+    <label for="end_date">End date:</label>
+    <input type="date" name="end_date" value="{{ end_date }}">
+    <button type="submit">Search</button>
+  </form>
+  {% if hits %}
+  <h3>Results</h3>
+  {% for hit in hits %}
+    <div>
+      <h4>{{ hit.name }} ({{ hit.upload_date }})</h4>
+      <p>{{ hit.highlight|safe }}</p>
+    </div>
+  {% endfor %}
+{% endif %}
+{% endblock %}
+</body>
+</html>

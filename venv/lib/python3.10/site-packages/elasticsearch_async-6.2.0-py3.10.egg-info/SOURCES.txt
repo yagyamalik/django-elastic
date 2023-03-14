@@ -1,0 +1,17 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README
+README.rst
+setup.cfg
+setup.py
+elasticsearch_async/__init__.py
+elasticsearch_async/connection.py
+elasticsearch_async/connection_pool.py
+elasticsearch_async/helpers.py
+elasticsearch_async/transport.py
+elasticsearch_async.egg-info/PKG-INFO
+elasticsearch_async.egg-info/SOURCES.txt
+elasticsearch_async.egg-info/dependency_links.txt
+elasticsearch_async.egg-info/requires.txt
+elasticsearch_async.egg-info/top_level.txt
